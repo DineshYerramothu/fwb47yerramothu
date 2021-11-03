@@ -2,4 +2,4 @@
 
 Assignment -10 
 
-class echo(name(string), color(string), Frequency(int))
+class echo(name(string), color(string), frequency(int))

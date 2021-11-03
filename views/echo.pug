@@ -2,31 +2,29 @@ extends layout
 
 block content
   h1= title
-    
+  p Search results echo  
   p 
   div(class="container-fluid")
         div(class="row")
             -
-                let echo  = [
+                let echo = [
                     {
                         "name": "DAN",
-                        "color": "colourless" ,
-                        "Frequency": 40
+                        "model": "elite" ,
+                        "frequency": 20
                     },
                     {
                         "name": "Estherino",
-                        "color": "brown" ,
-                        "Frequency": 22
+                        "model": "pro" ,
+                        "frequency": 30
                     },
                     {
                         "name": "Suzaku",
-                        "color": "white" ,
-                        "Frequency": 38
+                        "model": "elite pro max" ,
+                        "frequency": 40
                     },                   
                 ]
-            each v,index in echo  
+            each v,index in echo 
                 div(class="col-sm-2" ) #{v.name}
                 div(class="col-sm-2" ) #{v.color}
-                div(class="col-sm-2" ) #{v.Frequency}
-
-    
+                div(class="col-sm-2" ) #{v.frequency}
