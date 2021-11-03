@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1= title
+  p Search results Echo   
+  p 
+  div(class="container-fluid")
+        div(class="row")
+            -
+                let Echo  = [
+                    {
+                        "name": "DAN",
+                        "color": "colourless" ,
+                        "Frequency": 40
+                    },
+                    {
+                        "name": "Estherino",
+                        "color": "brown" ,
+                        "Frequency": 22
+                    },
+                    {
+                        "name": "Suzaku",
+                        "color": "white" ,
+                        "Frequency": 38
+                    },                   
+                ]
+            each v,index in Echo  
+                div(class="col-sm-2" ) #{v.name}
+                div(class="col-sm-2" ) #{v.color}
+                div(class="col-sm-2" ) #{v.Frequency}
+
+    
