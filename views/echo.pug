@@ -2,12 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Search results Echo   
+    
   p 
   div(class="container-fluid")
         div(class="row")
             -
-                let Echo  = [
+                let echo  = [
                     {
                         "name": "DAN",
                         "color": "colourless" ,
@@ -24,7 +24,7 @@ block content
                         "Frequency": 38
                     },                   
                 ]
-            each v,index in Echo  
+            each v,index in echo  
                 div(class="col-sm-2" ) #{v.name}
                 div(class="col-sm-2" ) #{v.color}
                 div(class="col-sm-2" ) #{v.Frequency}
